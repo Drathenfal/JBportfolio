@@ -1,0 +1,47 @@
+//generic
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mq(large){
+        width: 991px;
+    }
+    @include mq(xlarge){
+        width: 1270px;
+    }
+}
+
+.container-light {
+    background-color: $light-color;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mq(large){
+        width: 991px;
+    }
+    @include mq(xlarge){
+        width: 1270px;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: $dark-color;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: $font-weight--light;
+    font-size: 1.2rem;
+    letter-spacing: .4px;
+
+    
+    a:hover{
+        cursor: pointer;
+    }
+}
