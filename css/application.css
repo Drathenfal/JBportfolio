@@ -62,17 +62,21 @@ textarea {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 1260px) {
   .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrapper-main {
     margin-left: 15rem;
-    max-width: auto;
   }
 }
 
 @media (min-width: 1260px) {
-  .container {
+  .wrapper-main {
     margin-left: 15rem;
-    width: auto;
   }
 }
 
