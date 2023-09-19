@@ -1,2 +1,53 @@
 //Navigation
 
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 15rem;
+    // border: solid pink 3px;
+}
+
+
+.initials{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        background-color: $tert-color;
+        border-right: solid 1rem white;
+        padding: 3.5rem;
+    &:hover {
+        background-color: pink;
+        color: black;
+    }
+    strong {
+        font-size: 2.5rem;
+        font-weight: $font-weight--bold;
+        text-align: center;
+    }
+}
+
+.nav-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+        background-color: $light-color;
+        border-right: solid 1rem white;
+        border-top: solid 1rem white;
+    li {
+        font-size: 1.5rem;
+        font-weight: $font-weight--light;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 20px;
+
+    &:hover {
+        background-color: pink;
+        color: black;
+    }
+    }
+}

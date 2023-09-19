@@ -1,12 +1,10 @@
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-/* line 2, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
   all: unset;
   display: revert;
 }
 
 /* Preferred box-sizing value */
-/* line 8, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 *,
 *::before,
 *::after {
@@ -17,35 +15,34 @@
     Remove list styles (bullets/numbers)
     in case you use it with normalize.css
   */
-/* line 18, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 ol, ul {
   list-style: none;
 }
 
 /* For images to not be able to exceed their container */
-/* line 23, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 img {
   max-width: 100%;
 }
 
 /* Removes spacing between cells in tables */
-/* line 28, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 table {
   border-collapse: collapse;
 }
 
 /* Revert the 'white-space' property for textarea elements on Safari */
-/* line 33, ../xampp/htdocs/jbportfolio/scss/base/_normalize.scss */
 textarea {
   white-space: revert;
 }
 
-/* line 3, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 7, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
+.light-bg {
+  background-color: #483c36;
+  width: 100%;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -53,44 +50,32 @@ textarea {
   padding-right: 15px;
 }
 
-@media (min-width: 991px) {
-  /* line 7, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
+@media (min-width: 460px) {
   .container {
-    width: 991px;
+    width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container {
+    margin-left: 15rem;
+    max-width: auto;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 7, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
   .container {
-    width: 1270px;
+    margin-left: 15rem;
+    width: auto;
   }
 }
 
-/* line 20, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
-.container-light {
-  background-color: #483c36;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 991px) {
-  /* line 20, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
-  .container-light {
-    width: 991px;
-  }
-}
-
-@media (min-width: 1260px) {
-  /* line 20, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
-  .container-light {
-    width: 1270px;
-  }
-}
-
-/* line 34, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
 body {
   margin: 0;
   background-color: #181615;
@@ -101,19 +86,69 @@ body {
   letter-spacing: .4px;
 }
 
-/* line 44, ../xampp/htdocs/jbportfolio/scss/base/_base.scss */
 body a:hover {
   cursor: pointer;
 }
 
 @media (max-width: 991px) {
-  /* line 3, ../xampp/htdocs/jbportfolio/scss/layout/_navigation.scss */
   aside {
     display: none;
   }
 }
 
-/* line 3, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 15rem;
+}
+
+.initials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e66e1c;
+  border-right: solid 1rem white;
+  padding: 3.5rem;
+}
+
+.initials:hover {
+  background-color: pink;
+  color: black;
+}
+
+.initials strong {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nav-menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #483c36;
+  border-right: solid 1rem white;
+  border-top: solid 1rem white;
+}
+
+.nav-menu li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 20px;
+}
+
+.nav-menu li:hover {
+  background-color: pink;
+  color: black;
+}
+
 .hamburger {
   position: absolute;
   font-size: 3rem;
@@ -121,18 +156,21 @@ body a:hover {
   right: 1rem;
 }
 
-/* line 10, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
+@media (min-width: 991px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 .hamburger :hover {
   background-color: #483c36;
 }
 
-/* line 13, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .hamburger span {
   padding: 1rem;
   border-radius: 50%;
 }
 
-/* line 25, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .banner {
   height: 100vh;
   display: flex;
@@ -141,7 +179,6 @@ body a:hover {
   justify-content: center;
 }
 
-/* line 32, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .banner h1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -149,7 +186,6 @@ body a:hover {
   padding: 7rem 0.5rem 0.25rem;
 }
 
-/* line 39, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .banner p {
   font-size: 0.825rem;
   font-weight: 400;
@@ -157,7 +193,6 @@ body a:hover {
   padding: 0.25rem 0.5rem 7rem;
 }
 
-/* line 46, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .banner small {
   text-align: center;
   display: flex;
@@ -166,14 +201,12 @@ body a:hover {
   font-weight: 400;
 }
 
-/* line 54, ../xampp/htdocs/jbportfolio/scss/modules/_header.scss */
 .banner em {
   font-size: 0.625rem;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 3, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
 h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -181,36 +214,81 @@ h2 {
   padding: 15px 0;
 }
 
-/* line 10, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
 .myprojects {
   display: flex;
   flex-flow: column;
 }
 
-/* line 15, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-card {
+@media (min-width: 768px) {
+  .myprojects {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .myprojects h2 {
+    flex-flow: row;
+    width: 100%;
+  }
+}
+
+@media (min-width: 460px) {
+  .container-card {
+    width: 430px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 991px) {
+  .container-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container-card {
+    width: 30%;
+  }
+}
+
+.container-card .project-card {
   display: flex;
   flex-flow: column;
   border: dotted #e66e1c;
   margin-bottom: 20px;
 }
 
-/* line 20, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-card h3 {
+.container-card .project-card .project-image {
+  width: 100%;
+}
+
+.container-card .project-card .project-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.container-card .project-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
   padding: 10px 0;
 }
 
-/* line 26, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-card p {
+.container-card .project-card p {
   font-size: 1rem;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-/* line 32, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-card .button {
+.container-card .project-card .button {
   display: inline-block;
   white-space: nowrap;
   color: #fff;
@@ -224,32 +302,16 @@ h2 {
   background-color: #181615;
 }
 
-/* line 16, ../xampp/htdocs/jbportfolio/scss/utilities/_mixins.scss */
-.project-card .button:hover {
+.container-card .project-card .button:hover {
   background-color: #483c36;
 }
 
-/* line 38, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-image {
-  width: 100%;
-}
-
-/* line 42, ../xampp/htdocs/jbportfolio/scss/modules/_myprojects.scss */
-.project-card-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-}
-
-/* line 3, ../xampp/htdocs/jbportfolio/scss/modules/_contactme.scss */
 .contact-me {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 11, ../xampp/htdocs/jbportfolio/scss/modules/_contactme.scss */
 form {
   width: 80%;
   display: flex;
@@ -257,7 +319,6 @@ form {
   align-items: center;
 }
 
-/* line 17, ../xampp/htdocs/jbportfolio/scss/modules/_contactme.scss */
 form input {
   width: 100%;
   background-color: #483c36;
@@ -266,7 +327,6 @@ form input {
   margin: 5px;
 }
 
-/* line 25, ../xampp/htdocs/jbportfolio/scss/modules/_contactme.scss */
 form textarea {
   width: 100%;
   height: 30vh;
@@ -276,7 +336,6 @@ form textarea {
   margin: 5px;
 }
 
-/* line 34, ../xampp/htdocs/jbportfolio/scss/modules/_contactme.scss */
 form .submit {
   display: inline-block;
   white-space: nowrap;
@@ -291,9 +350,57 @@ form .submit {
   background-color: #483c36;
 }
 
-/* line 16, ../xampp/htdocs/jbportfolio/scss/utilities/_mixins.scss */
 form .submit:hover {
   background-color: #181615;
 }
 
-/*# sourceMappingURL=application.css.map */
+.footer-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.825rem;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+.scs-scheme-header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.scs-scheme-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.coding-examples-header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.coding-examples-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-me-header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-me-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}

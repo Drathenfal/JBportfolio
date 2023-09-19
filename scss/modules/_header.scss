@@ -5,7 +5,10 @@
     font-size: 3rem;
     top: 1.5rem;
     right: 1rem;
-    
+
+            @media (min-width: 991px) {
+            display: none;
+        }
     
     :hover {
      background-color: $light-color;

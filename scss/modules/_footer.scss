@@ -1,0 +1,11 @@
+// Footer
+
+.footer-info {
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.825rem;
+    font-weight: $font-weight--light;
+    padding: 10px 0px;
+}

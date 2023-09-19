@@ -14,22 +14,22 @@
 
 <body>
 <aside>
-    <nav class="container-nav">
-        <a href="index.html" class="nav-logo"><span>J B</span></a>
-    <div class="container-nav">
-        <ul class="nav-menu">
-            <li>About Me</li>
-            <li>My Portfolio</li>
-            <li>Coding Examples</li>
-            <li>SCS Scheme</li>
-            <li>Contact</li>
+    <nav class="main-nav">
+            <a class="initials" href="index.html"><strong>J B</strong></a>
+    <div class="nav-menu">
+        <ul>
+            <a href="about-me.html"><li>About Me</li></a>
+            <a href="#myprojects"><li>My Portfolio</li></a>
+            <a href="coding-examples.html"><li>Coding Examples</li></a>
+            <a href="scs-scheme.html"><li>SCS Scheme</li></a>
+            <a href="#contact-me"><li>Contact</li></a>
         </ul>
     </div>
     </nav>
 </aside>
 
 <header class="container">
-    <div class="banner">
+    <div class="banner" id="banner">
         <a class="hamburger" href="#"><span><i class="fa-solid fa-burger" style="color: #e66e1c"></i></span></a>
         <h1>My Name is [insert actual name]</h1>
         <p>I'm a Web Developer</p>
@@ -38,10 +38,13 @@
 </header>
 <!--------------------------PROJECTS-------------------------PROJECTS-----------------------PROJECTS-----------------------PROJECTS----------------------PROJECTS----------------------PROJECTS----------------->
 <main>
-<section class="container-light">
+<section class="light-bg">
+    <div  class="container">
     <div class="myprojects" id="myprojects">
     <h2>My Projects</h2>
  <!--Create Cards here-->
+
+ <div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -50,7 +53,9 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+<div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -59,7 +64,9 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+<div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -68,7 +75,9 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+<div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -77,7 +86,9 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+<div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -86,7 +97,9 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+<div class="container-card">
     <div class="project-card">
         <img class="project-image" src="images/projects/turtle.png" alt="Turtle eating popcorn">
     <div class="project-card-footer">
@@ -95,12 +108,15 @@
         <a class="button" href="#">View Project</a>
     </div>
     </div>
+</div>
 
+
+</div>
 </div>
 </section>
 <!--------------------------FORM--------------------------FORM-------------------------FORM-------------------------FORM-------------------------FORM---------------------------FORM-------------------->
 <section class="container">
-    <div class="contact-me">
+    <div class="contact-me" id="contact-me">
         <h2>Holla at ya Boi!</h2>
         <p>Any enquiries about my turty wurtys do not hesitate to contact via your preferred method and i will get back to you as quick as i can.</p>
         <phone>07812345678</phone>
@@ -123,8 +139,12 @@
 
 </main>
 
-<footer class="container-light">
-<p>Back to top</p>
+<footer class="light-bg">
+    <div class="container">
+        <div class="footer-info">
+<a href="#banner"><small><i class="fa-solid fa-angle-up" style="color: #ffffff;"></i></small><br>Back to Top</a>
+</div>
+</div>
 </footer>
 
 </body>

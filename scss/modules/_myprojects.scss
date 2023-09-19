@@ -10,39 +10,65 @@ h2 {
 .myprojects {
     display: flex;
     flex-flow: column;
-}
-
-.project-card {
-    display: flex;
-    flex-flow: column;
-    border: dotted $tert-color;
-    margin-bottom: 20px;
-    h3 {
-        font-size: 1.4rem;
-        font-weight: $font-weight--bold;
-        padding: 10px 0;
+    @include mq(medium){
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    p {
-        font-size: 1rem;
-        font-weight: $font-weight--light;
-        padding-bottom: 10px;
+    h2 {
+        @include mq(medium){
+            flex-flow: row;
+            width: 100%;
+        }
+    }
+}
+
+.container-card{
+    @include mq(small){
+        width: 430px;
+    }
+    @include mq(medium){
+        width: 40%;
+    }
+    @include mq(large){
+        width: 40%;
+    }
+    @include mq(xlarge){
+        width: 30%;
+    }
+    .project-card {
+        display: flex;
+        flex-flow: column;
+        border: dotted $tert-color;
+        margin-bottom: 20px;
+
+        .project-image {
+            width: 100%;
     }
 
-    .button {
-        @include button(5px, $dark-color, $light-color);
-     }
+    .project-card-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:15px;
+    }
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: $font-weight--bold;
+                padding: 10px 0;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: $font-weight--light;
+                padding-bottom: 10px;
+            }
+
+            .button {
+                @include button(5px, $dark-color, $light-color);
+            }
+        
+    }
 }
-
-
-.project-image {
-    width: 100%;
-}
-
-.project-card-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:15px;
-}
-

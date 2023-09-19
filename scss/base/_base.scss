@@ -4,32 +4,32 @@
     box-sizing: border-box;
 }
 
+.light-bg {
+    background-color: $light-color;
+    width: 100%;
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    @include mq(small){
+        width: 460px;
+    }
+    @include mq(medium){
+        width: 768px;
+    }
     @include mq(large){
-        width: 991px;
+        margin-left: 15rem;
+        max-width: auto;
     }
     @include mq(xlarge){
-        width: 1270px;
+        margin-left: 15rem;
+        width: auto;
     }
 }
 
-.container-light {
-    background-color: $light-color;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    @include mq(large){
-        width: 991px;
-    }
-    @include mq(xlarge){
-        width: 1270px;
-    }
-}
 
 body {
     margin: 0;
