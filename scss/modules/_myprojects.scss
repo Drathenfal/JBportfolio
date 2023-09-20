@@ -67,7 +67,7 @@ h2 {
             }
 
             .button {
-                @include button(5px, $dark-color, $light-color);
+                @include button(5px, $dark-color, $quat-color);
             }
         
     }

@@ -59,4 +59,7 @@
         font-weight: $font-weight--light;
         font-style: italic;
     }
+    a:hover , .fa-solid:hover{
+        color:$quat-color !important;
+    }
 }

@@ -1,5 +1,22 @@
 //Mix Ins
 
+//social media icons
+@mixin socialmedia-icons ($bimg,$bsize){
+    // height:56px;
+    // width:101px;
+    padding: 21px;
+    margin: 5px;
+    background-color: $light-color;
+    background-image: $bimg;
+    background-repeat: no-repeat;
+    background-size: $bsize;
+    background-position: center;
+    border-radius: 50%;
+    // @media (min-width: 480px){
+    //     width: 65px;
+    // }
+}
+
 //General Button
 @mixin button ($margin,$bgcolor,$bgcolor-hover){
     display:inline-block;

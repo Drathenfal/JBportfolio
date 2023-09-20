@@ -39,7 +39,7 @@ textarea {
 }
 
 .light-bg {
-  background-color: #483c36;
+  background-color: #2e2e2e;
   width: 100%;
 }
 
@@ -82,7 +82,7 @@ textarea {
 
 body {
   margin: 0;
-  background-color: #181615;
+  background-color: #030303;
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -113,14 +113,15 @@ body a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #e66e1c;
+  color: #030303;
+  background-color: #9e9e9e;
   border-right: solid 1rem white;
   padding: 3.5rem;
 }
 
 .initials:hover {
-  background-color: pink;
-  color: black;
+  background-color: #00a0e4;
+  color: #fff;
 }
 
 .initials strong {
@@ -135,7 +136,8 @@ body a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #483c36;
+  align-items: center;
+  background-color: #2e2e2e;
   border-right: solid 1rem white;
   border-top: solid 1rem white;
 }
@@ -149,8 +151,23 @@ body a:hover {
 }
 
 .nav-menu li:hover {
-  background-color: pink;
-  color: black;
+  background-color: #00a0e4;
+  color: #fff;
+}
+
+.social-icon-github {
+  padding: 21px;
+  margin: 5px;
+  background-color: #2e2e2e;
+  background-image: url("../images/other/1608908_github_icon.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.social-icon-github:hover {
+  background-color: #6e40c9;
 }
 
 .hamburger {
@@ -167,7 +184,7 @@ body a:hover {
 }
 
 .hamburger :hover {
-  background-color: #483c36;
+  background-color: #2e2e2e;
 }
 
 .hamburger span {
@@ -209,6 +226,10 @@ body a:hover {
   font-size: 0.625rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.banner a:hover, .banner .fa-solid:hover {
+  color: #00a0e4 !important;
 }
 
 h2 {
@@ -265,7 +286,7 @@ h2 {
 .container-card .project-card {
   display: flex;
   flex-flow: column;
-  border: dotted #e66e1c;
+  border: dotted #9e9e9e;
   margin-bottom: 20px;
 }
 
@@ -303,11 +324,11 @@ h2 {
   padding: 10px 30px;
   margin: 5px;
   text-align: center;
-  background-color: #181615;
+  background-color: #030303;
 }
 
 .container-card .project-card .button:hover {
-  background-color: #483c36;
+  background-color: #00a0e4;
 }
 
 .contact-me {
@@ -325,7 +346,7 @@ form {
 
 form input {
   width: 100%;
-  background-color: #483c36;
+  background-color: #2e2e2e;
   border-style: none;
   border-radius: 4px;
   margin: 5px;
@@ -334,7 +355,7 @@ form input {
 form textarea {
   width: 100%;
   height: 30vh;
-  background-color: #483c36;
+  background-color: #2e2e2e;
   border-style: none;
   border-radius: 4px;
   margin: 5px;
@@ -351,11 +372,11 @@ form .submit {
   padding: 10px 30px;
   margin: 10px 0px 20px 0px;
   text-align: center;
-  background-color: #483c36;
+  background-color: #2e2e2e;
 }
 
 form .submit:hover {
-  background-color: #181615;
+  background-color: #00a0e4;
 }
 
 .footer-info {
@@ -366,6 +387,10 @@ form .submit:hover {
   font-size: 0.825rem;
   font-weight: 400;
   padding: 10px 0px;
+}
+
+.footer-info a:hover, .footer-info .fa-solid:hover {
+  color: #00a0e4 !important;
 }
 
 .scs-scheme-header {

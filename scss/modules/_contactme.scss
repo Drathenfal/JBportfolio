@@ -32,7 +32,7 @@ form {
     }
  
     .submit {
-        @include button(10px 0px 20px 0px, $light-color, $dark-color);
+        @include button(10px 0px 20px 0px, $light-color, $quat-color);
     }
 }
 

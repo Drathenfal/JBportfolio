@@ -15,12 +15,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    color: $dark-color;
         background-color: $tert-color;
         border-right: solid 1rem white;
         padding: 3.5rem;
     &:hover {
-        background-color: pink;
-        color: black;
+        background-color: $quat-color;
+        color: #fff;
     }
     strong {
         font-size: 2.5rem;
@@ -35,6 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
         background-color: $light-color;
         border-right: solid 1rem white;
         border-top: solid 1rem white;
@@ -46,8 +48,15 @@
         padding: 20px;
 
     &:hover {
-        background-color: pink;
-        color: black;
+        background-color: $quat-color;
+        color: #fff;
     }
+    }
+}
+
+.social-icon-github {
+    @include socialmedia-icons (url("../images/other/1608908_github_icon.png"), 50px);
+    &:hover {
+        background-color: #6e40c9;
     }
 }
