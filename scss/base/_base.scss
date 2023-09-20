@@ -21,10 +21,13 @@
         width: 768px;
     }
     @include mq(large){
-        // width:962px;  
+        width: 748px; 
     }
     @include mq(xlarge){
-        width: 900px;
+        width: 1000px;
+    }
+    @include mq(xxlarge){
+        width: 1250px;
     }
 }
 

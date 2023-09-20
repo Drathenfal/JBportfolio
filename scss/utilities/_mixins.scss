@@ -65,6 +65,11 @@
             @content;
     }
 }
+@else if $break == "xxlarge" {
+    @media (min-width: $break-xxlarge) {
+            @content;
+    }
+}
 @else {
     @error "#{$break} isnt a valid media query size!!";
     }
