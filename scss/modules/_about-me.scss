@@ -1,15 +1,15 @@
 //About Me
 
 .about-me-header {
-    height: 20vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 
     h1 {
         font-size: 2.5rem;
         font-weight: $font-weight--bold;
         text-align: center;
+        padding: 100px;
     }
 }
