@@ -15,9 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include mq(xlarge){
-    margin-right: 20px;
-    }
+    ////remove this when container made
+    // @include mq(xlarge){
+    // margin-right: 20px;
+    // }
 
     strong {
         padding: 40px 0px;
@@ -30,6 +31,9 @@
         padding-bottom: 20px;
         font-size: 1rem;
         font-weight: $font-weight--bold;
+        @media(min-width:400px){
+            font-size: 1.4rem;
+        }
     }
 
     p {
@@ -74,37 +78,40 @@ form {
     }
 }
 
-@include mq(medium){
-    .firstname {
-        margin-right: 10px;
-        width: 50%;
-    }
-    .lastname {
-        width: 48.6%;
-        @include mq(xlarge){
-            width: 48.1%;
-        }
-    }
-}
+// @include mq(medium){
+//     .firstname {
+//         width: 48.6%;
+//     }
+//     .lastname {
+//         width: 48.6%;
+//     }
+// }
 
     input {
         width: 100%;
         background-color: $light-color;
         border-style:none;
         border-radius: 4px;
-        margin: 5px 0px;
+        margin: 5px 5px;
         padding: 10px;
-    //     @include mq(medium){
-    //     &[name$="name"] {
-    //         width: 50%;
-    //     }
-    //     @include mq(xlarge){
-    //         &[name$="name"] {
-    //             width: 50%;
-    //             margin-top: 60px;
-    //         }
-    //   }
-    // }
+        @include mq(medium){
+        &[name$="name"] {
+            width: 48.6%;
+            flex-grow: 1;
+        }
+        @include mq(large){
+            &[name$="name"] {
+                width: 47.1%;
+                flex-grow: 1;
+            }
+        @include mq(xlarge){
+            &[name$="name"] {
+                width: 45%;
+                flex-grow: 1;
+                }
+            }
+        }
+    }
 }
 
     textarea {
@@ -116,7 +123,7 @@ form {
         background-color: $light-color;
         border-style:none;
         border-radius: 4px;
-        margin: 5px 0px;
+        margin: 5px 5px;
         padding: 10px;
         overflow: hidden;
         resize:vertical;

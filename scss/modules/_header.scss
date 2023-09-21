@@ -19,12 +19,6 @@
     }
 }
 
-// if i want to change actual burger color
-// .fa-solid:hover {
-//     color: #fff !important;
-// }
-
-
 .banner {
     height: 100vh;
     display: flex;
@@ -33,14 +27,14 @@
     justify-content: center;
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: $font-weight--bold;
         text-align: center;
         padding: 7rem 0.5rem 0.25rem;
     }
 
     p {
-        font-size: 0.825rem;
+        font-size: 1.25rem;
         font-weight: $font-weight--light;
         font-style: italic;
         padding: 0.25rem 0.5rem 7rem;
