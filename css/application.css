@@ -446,20 +446,6 @@ form input {
 
 @media (min-width: 768px) {
   form input[name$="name"] {
-    width: 48.6%;
-    flex-grow: 1;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 991px) {
-  form input[name$="name"] {
-    width: 47.1%;
-    flex-grow: 1;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 991px) and (min-width: 1260px) {
-  form input[name$="name"] {
     width: 45%;
     flex-grow: 1;
   }
@@ -515,19 +501,6 @@ form .submit:hover {
   color: #00a0e4 !important;
 }
 
-.scs-scheme-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.scs-scheme-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
 main p {
   padding-bottom: 20px;
 }
@@ -536,37 +509,6 @@ main ul {
   padding-left: 20px;
   padding-bottom: 20px;
   list-style-type: circle;
-}
-
-.coding-examples-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.coding-examples-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.about-me-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.about-me-header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.about-me-header p {
-  text-align: center;
 }
 
 @media (max-width: 990px) {

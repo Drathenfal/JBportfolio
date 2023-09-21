@@ -96,21 +96,21 @@ form {
         padding: 10px;
         @include mq(medium){
         &[name$="name"] {
-            width: 48.6%;
+            width: 45%;
             flex-grow: 1;
         }
-        @include mq(large){
-            &[name$="name"] {
-                width: 47.1%;
-                flex-grow: 1;
-            }
-        @include mq(xlarge){
-            &[name$="name"] {
-                width: 45%;
-                flex-grow: 1;
-                }
-            }
-        }
+        // @include mq(large){
+        //     &[name$="name"] {
+        //         width: 47.1%;
+        //         flex-grow: 1;
+        //     }
+        // @include mq(xlarge){
+        //     &[name$="name"] {
+        //         width: 45%;
+        //         flex-grow: 1;
+        //         }
+        //     }
+        // }
     }
 }
 
