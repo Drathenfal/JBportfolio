@@ -106,6 +106,13 @@ textarea {
   }
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px 0;
+}
+
 body {
   margin: 0;
   background-color: #030303;
@@ -230,6 +237,7 @@ body a:hover {
 .banner p {
   font-size: 1.25rem;
   font-weight: 400;
+  text-align: center;
   font-style: italic;
   padding: 0.25rem 0.5rem 7rem;
 }
@@ -509,6 +517,84 @@ main ul {
   padding-left: 20px;
   padding-bottom: 20px;
   list-style-type: circle;
+}
+
+.container-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .container-article {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container-image-aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .container-image-aboutme {
+    width: 50%;
+  }
+}
+
+.container-image-aboutme img {
+  flex-grow: 1;
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .container-image-aboutme img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #article2 {
+    flex-direction: row-reverse;
+  }
+}
+
+.container-mini-article {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.about-me-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .about-me-section h3 {
+    text-align: unset;
+  }
+}
+
+.about-me-section em {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+.about-me-section p {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 990px) {

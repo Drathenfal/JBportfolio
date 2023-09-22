@@ -32,7 +32,6 @@
 }
 
 .container-mini {
-    
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -53,6 +52,12 @@
 }
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: $font-weight--bold;
+    text-align: center;
+        padding: 25px 0;
+}
 
 body {
     margin: 0;
