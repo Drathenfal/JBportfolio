@@ -34,11 +34,13 @@
 .container-mini {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     width: 100%;
-    @include mq(large) {
-    width: 50%; 
+    @include mq (large){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include mq (xlarge){
+        width: 50%;
     }
 }
 

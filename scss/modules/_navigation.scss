@@ -1,4 +1,9 @@
 //Navigation
+aside {
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
 
 .main-nav {
     display: flex;
@@ -9,7 +14,6 @@
     width: 15rem;
     // border: solid pink 3px;
 }
-
 
 .initials{
     display: flex;

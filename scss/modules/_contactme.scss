@@ -15,10 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    ////remove this when container made
-    // @include mq(xlarge){
-    // margin-right: 20px;
-    // }
+
 
     strong {
         padding: 40px 0px;
@@ -38,9 +35,6 @@
 
     p {
         text-align: center;
-        // @include mq(xlarge){
-        //     text-align: left;
-        // }
     }
 
 
