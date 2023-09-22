@@ -1,11 +1,6 @@
 // My Projects
 
-h2 {
-    font-size: 2rem;
-    font-weight: $font-weight--bold;
-    text-align: center;
-        padding: 25px 0;
-}
+
 
 .myprojects {
     display: flex;
@@ -13,7 +8,7 @@ h2 {
     @include mq(medium){
         flex-flow: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     h2 {
@@ -42,7 +37,7 @@ h2 {
         flex-flow: column;
         border: dotted $tert-color;
         height: 422px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         .project-image {
             object-fit: cover;

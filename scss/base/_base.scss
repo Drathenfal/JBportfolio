@@ -31,20 +31,6 @@
     }
 }
 
-.container-mini {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    @include mq (large){
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    @include mq (xlarge){
-        width: 50%;
-    }
-}
-
-
 .wrapper-main {
     @include mq(large){
         margin-left: 15rem;

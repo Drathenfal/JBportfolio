@@ -11,6 +11,26 @@
     }
 }
 
+.container-mini {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @include mq (xlarge){
+        width: 50%;
+        padding-right: 15px;
+    }
+}
+
+.container-mini2 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @include mq (xlarge){
+        padding-left: 15px;
+        width: 50%;
+    }
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
