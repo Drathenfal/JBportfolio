@@ -349,6 +349,10 @@ body a:hover {
   background-color: #00a0e4;
 }
 
+.container-card .project-card .button:hover {
+  text-decoration: none;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;

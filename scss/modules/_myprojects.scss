@@ -68,6 +68,9 @@
 
             .button {
                 @include button(5px, $dark-color, $quat-color);
+                &:hover {
+                    text-decoration: none;
+                }
             }
         
     }
