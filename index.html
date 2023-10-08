@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1ba3c938d.js" crossorigin="anonymous"></script>
+    <script defer src="form-validation.js"></script>
 </head>
 
 
@@ -51,7 +52,7 @@
 
  <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project One</h3>
         <p>Coming Soon...</p>
@@ -62,7 +63,7 @@
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project Two</h3>
         <p>Coming Soon...</p>
@@ -73,7 +74,7 @@
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project Three</h3>
         <p>Coming Soon...</p>
@@ -84,7 +85,7 @@
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project Four</h3>
         <p>Coming Soon...</p>
@@ -95,7 +96,7 @@
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project Five</h3>
         <p>Coming Soon...</p>
@@ -106,7 +107,7 @@
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Turtle eating popcorn">
+        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
     <div class="project-card-footer">
         <h3>Project Six</h3>
         <p>Coming Soon...</p>
@@ -137,18 +138,28 @@
             </div>
                 </div>
                 <div class="container-mini2">
-                    <form>
-                        <input class="firstname" type="text" name="first_name" placeholder="First name*">
-                        
-                        <input class="lastname" type="text" name="last_name" placeholder="Last name*">
-                        
-                        <input class="email" type="email" name="email_address" placeholder="Email address*">
-                        
-                        <input class="subject" type="Select" name="subject" placeholder="Subject">
-                        
-                        <textarea class="messagearea" type="text" maxlength="300" name="message" placeholder="Message..."></textarea>
-                        
-                        <button class="submit" type="submit" name="Submit">Submit</button>
+                    <form id="form" action="/">
+                        <div class="input-control name fname">
+                            <input class="firstname" type="text" name="first_name" placeholder="First name">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control name">
+                            <input class="lastname" type="text" name="last_name" placeholder="Last name">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input class="email" type="text" name="email_address" placeholder="Email address">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input class="subject" type="Select" name="subject" placeholder="Subject">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <textarea class="messagearea" type="text" maxlength="300" name="message" placeholder="Message..."></textarea>
+                            <div class="error"></div>
+                        </div>
+                            <button class="submit" type="submit" name="Submit">Submit</button>
                     </form>
                 </div> 
     </div>
