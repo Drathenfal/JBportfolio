@@ -1,0 +1,15 @@
+// Ham burger menu
+
+.off-screen-menu{
+    position: fixed;
+    top: 0;
+    left: -15rem;
+    width: 15rem;
+    background-color: $light-color;
+    height: 100vh;
+    transition: left .5s;
+}
+
+.off-screen-menu.active{
+    left:0;
+}
