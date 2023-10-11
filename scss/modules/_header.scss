@@ -1,23 +1,5 @@
 //header
 
-.hamburger{
-    position: absolute;
-    font-size: 3rem;
-    top: 1.5rem;
-    right: 1rem;
-
-            @media (min-width: 991px) {
-            display: none;
-        }
-    
-    :hover {
-     background-color: $light-color;
-    }
-    span {
-        padding: 1rem;
-        border-radius: 50%;
-    }
-}
 
 .banner {
     height: 100vh;
@@ -58,3 +40,11 @@
         color:$quat-color !important;
     }
 }
+
+// .text-container {
+//     // overflow: hidden;
+//     // white-space: nowrap;
+//     // border-right: 3px solid transparent;
+//     // font-size: 24px;
+//     // font-family: monospace;
+// }

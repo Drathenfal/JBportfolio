@@ -8,6 +8,13 @@
     background-color: $light-color;
     height: 100vh;
     transition: left .5s;
+    .ham-holder {
+        height: 100px;
+        width: 100%;
+        background-color: $light-color;
+        border-bottom: solid 1rem white;;
+        border-right: solid 1rem white;;
+    }
 }
 
 .off-screen-menu.active{

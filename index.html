@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1ba3c938d.js" crossorigin="anonymous"></script>
-    <script defer src="form-validation.js"></script>
+    <script defer src="javascript/form-validation.js"></script>
 </head>
 
 
@@ -35,6 +35,7 @@
 </aside>
 
 <nav class="off-screen-menu">
+    <div class="ham-holder"></div>
     <a class="initials" href="index.html"><strong>J B</strong></a>
     <div class="nav-menu">
         <ul>
@@ -57,7 +58,7 @@
             <div class="ham-bar bar-mid"></div>
             <div class="ham-bar bar-bottom"></div>
         </div>
-        <h1>My Name is Jake Bignell</h1>
+        <h1>My Name is <span class="text-container">Jake Bignell</span></h1>
         <p>I'm a Web Developer</p>
         <a href="#myprojects"><em>To My Projects</em><small><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></small></a>
     </div>
@@ -167,7 +168,7 @@
                             <div class="error"></div>
                         </div>
                         <div class="input-control">
-                            <input class="email" type="text" name="email_address" placeholder="Email address">
+                            <input class="email" type="email" name="email_address" placeholder="Email address">
                             <div class="error"></div>
                         </div>
                         <div class="input-control">
@@ -196,6 +197,7 @@
 </footer>
 
 </div>
-<script src="hamburger.js"></script>
+<script src="javascript/hamburger.js"></script>
+<script src="javascript/banner-animation.js"></script>
 </body>
 </html>
