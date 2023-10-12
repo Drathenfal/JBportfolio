@@ -1,33 +1,5 @@
 //Hamburger Icon itself
 
-// nav {
-//     padding: 1rem;
-//     background-color: darkblue;
-
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-// }
-
-// .hamburger{
-//     position: absolute;
-//     font-size: 3rem;
-//     top: 1.5rem;
-//     right: 1rem;
-
-//             @media (min-width: 991px) {   /// Old hambugler
-//             display: none;
-//         }
-    
-//     :hover {
-//      background-color: $light-color;
-//     }
-//     // span {
-//     //     padding: 1rem;
-//     //     border-radius: 50%;
-//     // }
-// }
-
 
 .hamburger-menu {
     background-color: $tert-color;
@@ -38,7 +10,7 @@
     left: 1rem;
     cursor: pointer;
     padding: 1rem;
-    z-index: 1;
+    z-index: 6;
     border-radius: 5px;
     @media (min-width: 991px) {
         display: none;

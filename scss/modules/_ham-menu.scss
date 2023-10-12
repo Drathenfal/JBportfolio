@@ -8,6 +8,7 @@
     background-color: $light-color;
     height: 100vh;
     transition: left .5s;
+    z-index: 5;
     .ham-holder {
         height: 100px;
         width: 100%;

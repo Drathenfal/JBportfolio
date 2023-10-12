@@ -657,6 +657,7 @@ main a:hover {
   background-color: #2e2e2e;
   height: 100vh;
   transition: left .5s;
+  z-index: 5;
 }
 
 .off-screen-menu .ham-holder {
@@ -680,7 +681,7 @@ main a:hover {
   left: 1rem;
   cursor: pointer;
   padding: 1rem;
-  z-index: 1;
+  z-index: 6;
   border-radius: 5px;
 }
 
