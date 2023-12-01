@@ -566,6 +566,10 @@ main a:hover {
   text-decoration: underline;
 }
 
+.coding-examples-section p {
+  padding-bottom: 20px;
+}
+
 .container-article {
   display: flex;
   flex-direction: column;
@@ -597,7 +601,7 @@ main a:hover {
 
 .container-image-aboutme img {
   flex-grow: 1;
-  height: 250px;
+  height: auto;
   max-width: 250px;
   border: 3px solid #00a0e4;
   border-radius: 25px;
@@ -605,7 +609,7 @@ main a:hover {
 
 @media (min-width: 768px) {
   .container-image-aboutme img {
-    height: 300px;
+    height: auto;
     max-width: 300px;
   }
 }
