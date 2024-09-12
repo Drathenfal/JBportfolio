@@ -14,40 +14,15 @@
 
 
 <body>
-<aside>
-    <nav class="main-nav">
-            <a class="initials" href="index.html"><strong>J B</strong></a>
-    <div class="nav-menu">
-        <ul>
-            <a href="about-me.html"><li>About Me</li></a>
-            <a href="#myprojects"><li>My Portfolio</li></a>
-            <a href="coding-examples.html"><li>Coding Examples</li></a>
-            <a href="scs-scheme.html"><li>SCS Scheme</li></a>
-            <a href="#contact-me"><li>Contact</li></a>
-        </ul>
-<a href="https://github.com/Drathenfal" target="_blank" class="social-icon-github"></a>
-
-    </div>
-    </nav>
-</aside>
-
-<nav class="off-screen-menu">
-    <div class="ham-holder"></div>
-    <a class="initials" href="index.html"><strong>J B</strong></a>
-    <div class="nav-menu">
-        <ul>
-            <a href="about-me.html"><li>About Me</li></a>
-            <a href="#myprojects"><li>My Portfolio</li></a>
-            <a href="coding-examples.html"><li>Coding Examples</li></a>
-            <a href="scs-scheme.html"><li>SCS Scheme</li></a>
-            <a href="#contact-me"><li>Contact</li></a>
-        </ul>
-<a href="https://github.com/Drathenfal" target="_blank" class="social-icon-github"></a>
-
-    </div>
-</nav>
-
-<div class="wrapper-main">
+<?php
+$filename = 'php/preheader.php';
+if (file_exists($filename)) {
+    include $filename;
+} else {
+    // Handle error (e.g., log or display an error message)
+    echo "Error: '$filename' could not be found please hang tight site may be undergoing maintenance";
+}
+?>
 <header class="container">
     <div class="banner" id="banner">
         <div class="hamburger-menu">
@@ -56,7 +31,7 @@
             <div class="ham-bar bar-bottom"></div>
         </div>
         <h1>My Name is <span class="text-container">Jake Bignell</span></h1>
-        <p>I'm a Web Developer</p>
+        <p>I'm a Game Developer</p>
         <a href="#myprojects"><em>To My Projects</em><small><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></small></a>
     </div>
 </header>
@@ -69,66 +44,66 @@
 
  <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/netmattershomepage.png" alt="Netmatter Homepage">
+        <img class="project-image" src="images/projects/spinnyknightssurvival.png" alt="Netmatter Homepage">
     <div class="project-card-footer">
-        <h3>Netmatters Homepage</h3>
-        <p>My rebuild of the Netmatters Homepage.</p>
-        <a class="button" href="http://netmatters.jake-bignell.netmatters-scs.co.uk/" target="_blank">View Project</a>
+        <h3>Spinny Knights Survival</h3>
+        <p>4 day project of week 5 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/d85b7efd-597c-4ce0-b6b6-2b64f493d462/spinny-knights-survival" target="_blank">View Project</a>
     </div>
     </div>
 </div>
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
+        <img class="project-image" src="images/projects/Z&H.png" alt="Placeholder image">
     <div class="project-card-footer">
-        <h3>Project Two</h3>
-        <p>Coming Soon...</p>
-        <a class="button" href="#">View Project</a>
+        <h3>Zombies & Hookers</h3>
+        <p>4 day project of week 2 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/4b40aeac-35d6-4f6d-8bd8-11faf3b6992a/zombies-and-ladies-of-the-night">View Project</a>
     </div>
     </div>
 </div>
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
+        <img class="project-image" src="images/projects/BatAZombie.png" alt="Placeholder image">
     <div class="project-card-footer">
-        <h3>Project Three</h3>
-        <p>Coming Soon...</p>
-        <a class="button" href="#">View Project</a>
+        <h3>Splat A Zombie</h3>
+        <p>4 day project of week 6 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/7fd0d37b-9c9e-4337-9736-afb416146e7b/splat-a-zombie">View Project</a>
     </div>
     </div>
 </div>
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
+        <img class="project-image" src="images/projects/spiders.png" alt="Placeholder image">
     <div class="project-card-footer">
-        <h3>Project Four</h3>
-        <p>Coming Soon...</p>
-        <a class="button" href="#">View Project</a>
+        <h3>Why Did It Have To Be Spiders</h3>
+        <p>4 day project of week 3 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/5aafa0b1-a1ad-4855-9719-5aeebb66ab81/why-did-it-have-to-be-spiders">View Project</a>
     </div>
     </div>
 </div>
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
+        <img class="project-image" src="images/projects/penguinpachinko.png" alt="Placeholder image">
     <div class="project-card-footer">
-        <h3>Project Five</h3>
-        <p>Coming Soon...</p>
-        <a class="button" href="#">View Project</a>
+        <h3>Penguin Pachinko</h3>
+        <p>4 day project of week 1 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/ce7d8821-b71b-49dd-aba5-2885f84d2b60/penguin-pachinko">View Project</a>
     </div>
     </div>
 </div>
 
 <div class="container-card">
     <div class="project-card">
-        <img class="project-image" src="images/projects/dev-placeholder.png" alt="Placeholder image">
+        <img class="project-image" src="images/projects/spinnyknight.png" alt="Placeholder image">
     <div class="project-card-footer">
-        <h3>Project Six</h3>
-        <p>Coming Soon...</p>
-        <a class="button" href="#">View Project</a>
+        <h3>Spinny Knights</h3>
+        <p>4 day project of week 4 Tech Educators</p>
+        <a class="button" href="https://play.unity.com/en/games/c4e6cf9a-384a-4217-979a-c83184b8186c/spinny-knights">View Project</a>
     </div>
     </div>
 </div>
@@ -184,15 +159,15 @@
 </section>
 
 </main>
-
-<footer class="light-bg">
-    <div class="container">
-        <div class="footer-info">
-<a href="#banner"><small><i class="fa-solid fa-angle-up" style="color: #ffffff;"></i></small><br>Back to Top</a>
-</div>
-</div>
-</footer>
-
+<?php
+$filename = 'php/footer.php';
+if (file_exists($filename)) {
+    include $filename;
+} else {
+    // Handle error (e.g., log or display an error message)
+    echo "Error: '$filename' could not be found please hang tight site may be undergoing maintenance";
+}
+?>
 </div>
 <script src="javascript/hamburger.js"></script>
 <script src="javascript/banner-animation-home.js"></script>

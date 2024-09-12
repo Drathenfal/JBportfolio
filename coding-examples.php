@@ -12,42 +12,16 @@
 </head>
 
 
-
 <body>
-    <aside>
-        <nav class="main-nav">
-                <a class="initials" href="index.html"><strong>J B</strong></a>
-        <div class="nav-menu">
-            <ul>
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="index.html#myprojects"><li>My Portfolio</li></a>
-                <a href="coding-examples.html"><li>Coding Examples</li></a>
-                <a href="scs-scheme.html"><li>SCS Scheme</li></a>
-                <a href="index.html#contact-me"><li>Contact</li></a>
-            </ul>
-            <a href="https://github.com/Drathenfal" target="_blank" class="social-icon-github"></a>
-        </div>
-        </nav>
-    </aside>
-
-    <nav class="off-screen-menu">
-        <div class="ham-holder"></div>
-        <a class="initials" href="index.html"><strong>J B</strong></a>
-        <div class="nav-menu">
-            <ul>
-                <a href="about-me.html"><li>About Me</li></a>
-                <a href="index.html#myprojects"><li>My Portfolio</li></a>
-                <a href="coding-examples.html"><li>Coding Examples</li></a>
-                <a href="scs-scheme.html"><li>SCS Scheme</li></a>
-                <a href="index.html#contact-me"><li>Contact</li></a>
-            </ul>
-    <a href="https://github.com/Drathenfal" target="_blank" class="social-icon-github"></a>
-    
-        </div>
-    </nav>
-
-    <div class="wrapper-main">
-
+<?php
+$filename = 'php/preheader.php';
+if (file_exists($filename)) {
+    include $filename;
+} else {
+    // Handle error (e.g., log or display an error message)
+    echo "Error: '$filename' could not be found please hang tight site may be undergoing maintenance";
+}
+?>
 <header class="container">
     <div class="banner" id="banner-coding-examples">
         <div class="hamburger-menu">
@@ -71,15 +45,15 @@
     <script src="https://gist.github.com/Drathenfal/db62b18aa3728eb8b45d6dc208430506.js"></script>
 </div>
 </main>
-
-<footer class="light-bg">
-    <div class="container">
-        <div class="footer-info">
-<a href="#banner-coding-examples"><small><i class="fa-solid fa-angle-up" style="color: #ffffff;"></i></small><br>Back to Top</a>
-</div>
-</div>
-</footer>
-
+<?php
+$filename = 'php/footer.php';
+if (file_exists($filename)) {
+    include $filename;
+} else {
+    // Handle error (e.g., log or display an error message)
+    echo "Error: '$filename' could not be found please hang tight site may be undergoing maintenance";
+}
+?>
     </div>
     <script src="javascript/hamburger.js"></script>
     <script src="javascript/banner-animation-coding-exmaples.js"></script>
